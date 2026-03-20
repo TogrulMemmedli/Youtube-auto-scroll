@@ -1,0 +1,18 @@
+
+{
+  "_comment": "Zoktay benim",
+  "manifest_version": 3,
+  "name": "YT Shorts Autoscroll",
+  "version": "1.0",
+  "description": "Automatically scrolls YouTube Shorts videos.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Settings & Info"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
